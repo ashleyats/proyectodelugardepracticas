@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podología Preventiva</title>
+    <style>    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            color: black;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+        section {
+            padding: 20px;
+        }
+        .card {
+            background: gold;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        a {
+            color: #004080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+    const images = document.querySelectorAll("img");
+    let activeImage = null;
+
+    images.forEach(img => {
+        img.addEventListener("click", () => {
+            if (activeImage) {
+                activeImage.classList.remove("enlarged");
+            }
+
+            if (activeImage !== img) {
+                img.classList.add("enlarged");
+                activeImage = img;
+            } else {
+                // Si se hace clic en la misma imagen, desactivarla
+                activeImage = null;
+            }
+        });
+    });
+</script>
+
+    <header>
+        Podología Preventiva <br> 
+        <img src="decorados.png" = alt"imagen decorativa"
+    </header>
+
+    <section>
+        <div class="card">
+            <h2>Servicios</h2>
+            <p>*Servicio podológico
+            *Consulta 
+            *Uña enterrada
+            *Servicio + uña enterrada 
+            *Servicio + mechas
+            *Servicio + tratamiento
+            *Tratamiento de onicomicosis
+            *Diatermia
+            *Pedigrafía</p>
+        </div>
+        
+        <img src="desamex.jpeg" alt="">
+
+        <div class="card">
+            <h2>Podología Preventiva</h2>
+            Podología Preventiva es un servicio público que ofrece trabajos de buena calidad para el cuidado de los pies. Tiene una disciplina de las ciencias de la salud dedicada al estudio, diagnóstico, tratamiento y prevención de las enfermedades y alteraciones que afectan a los pies. </p>
+        </div>
+       
+        <img src="desamex2.jpeg" alt="">
+
+        <div class="card">
+            <h2>Ubicación y Horarios</h2>
+            <p><strong>Dirección:</strong> Sauces 4, calle paseo de las Haciendas No. 6, municipio de Toluca, código postal 502010</p>
+            <p><strong>Horarios:</strong> Lunes a Viernes, 11:00 AM - 7:00 PM
+            Sábado, 11:00 AM - 4:00 PM</p>
+        </div>
+        
+       <img src="desamex3.jpeg" alt="">
+        
+        <div class="card">
+            <h2>Contacto</h2>
+            <p><strong>Facebook:</strong> Podología Preventiva </p>
+            <p><strong>Teléfono:</strong> 722 242 6631 </p>
+        </div>
+        
+        <img src="desamex4.jpeg" alt="">
+
+        <div class="card">
+            <h2>Revista Digital</h2>
+            <p>Revista del Cuidado del Agua - Visita nuestra revista digital:</p>
+            <a class="boton" href="https://www.canva.com/design/DAGg0w00UO4/SdBua88Gu2eenWJCO7Lzfw/edit?utm_content=DAGg0w00UO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton target="_blank">
+                Ver revista
+            </a>
+        </div>
+    </section>
+    
+    <img src="desamex5.jpeg" alt="">
+    
+    <footer>
+         <br>
+        Desarrollado por: Elizabeth Hernández García y 
+        Ashley Juárez Acosta 
+    </footer>
+
+</body>
+</html>
